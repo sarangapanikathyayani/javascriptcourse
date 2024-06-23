@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+ img{
+    height: 30%;
+    width:30%;
+    display:flex;
+    flex-direction: row;
+    margin-left: auto;
+   margin-right: auto;
+
+ }
+ button{
+    margin-left: 40%;
+  margin-right: 30%;
+
+ margin-bottom: 5px;
+   }
+
+   </style>
+</head>
+<body>
+    <div class="ogfam">
+    <div id="Hero">
+<img src="https://i.ytimg.com/vi/XIBUYf-mfnA/maxresdefault.jpg" alt="no image">
+<button id="changeBackgroundButton">Dont Dare to Touch</button>
+    </div>
+    <div id="Heroine">
+<img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/04/og-1681886605.jpg">
+<button id="changeBackgroundButton1">You can</button>
+    </div>
+    <div id="director">
+<img src="https://d1vzdswwroofzl.cloudfront.net/wp-content/uploads/2023/02/OG-to-Go-on-the-Floors-from-this-Month1.jpg">
+<button id="changeBackgroundButton2">justTouch</button>
+</div>
+</div>
+<script>
+
+document.getElementById('changeBackgroundButton').addEventListener('click', function() {
+    var Hero=document.getElementById('Hero');
+        Hero.style.backgroundImage='url("https://img.freepik.com/free-photo/color-smoke-abstract-wallpaper-aesthetic-background-design_53876-128237.jpg")';
+});
+
+document.getElementById('changeBackgroundButton1').addEventListener('click', function() {
+    var Heroine=document.getElementById('Heroine');
+        Heroine.style.backgroundImage='url("https://i.pinimg.com/736x/5f/84/63/5f8463b77e1c518309e5d4419178fb2d.jpg")';
+});
+
+document.getElementById('changeBackgroundButton2').addEventListener('click', function() {
+    var director=document.getElementById('director');
+        director.style.backgroundImage='url("https://img.freepik.com/free-photo/green-field-tree-blue-skygreat-as-backgroundweb-banner-generative-ai_1258-158251.jpg")';
+});
+
+
+
+
+/*function colorbg(){
+    document.body.style.backgroundColor="pink";
+}
+ function dirbg()  {
+    document.body.style.backgroundColor="skyblue";
+ }*/
+
+    </script>
+</body>
+</html>

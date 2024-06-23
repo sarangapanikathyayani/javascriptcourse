@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Calucator With out buttons</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Calucator">
+        </div>
+        <div>
+            <button type="submit">Calucate</button> 
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+   <script>
+
+    const button=document.querySelector("button")
+    button.addEventListener('click',displaystats)
+    /*function displaystats(){
+        //operand1 operator operand2
+        //5  + 9
+        //we have to take the input to display the stats
+        const input=document.getElementById("input").value
+       let operand1=input
+       let operand2=input
+    //operand1+operand2 it goes to switch case +
+   // operand1-operand2 it goes to switch case -
+   switch(op)
+   {
+    case '+':
+    operand1+operand2
+    break
+    case '-':
+        operand1-operand2
+        break
+    case '*':
+        operand1*operand2
+        break
+    case '/':
+        operand1/operand2
+   }
+   */
+    // JavaScript program for 
+// simple mathematical calculations 
+
+// Add two numbers 
+function displaystats()
+{
+function add(num1, num2) { 
+	return num1 + num2; 
+} 
+// Function for subtraction 
+function subtract(num1, num2) { 
+	return num1 - num2; 
+} 
+
+// For multiplying of two numbers 
+function multiply(num1, num2) { 
+	return num1 * num2; 
+} 
+// Function for division of 
+// two numbers 
+function divide(num1, num2) { 
+if(num2 === 0) return undefined; 
+	return num1 / num2; 
+} 
+
+// Creating variable 
+// for operation 
+let operation = '+'; 
+
+// Creating variables for 
+// num1 and num2 
+let num1 = 4; 
+let num2 = 5; 
+
+// Creating result variable 
+let result; 
+
+// Switch case statement 
+switch (operation) { 
+	case "+": 
+		result = add(num1, num2); 
+		break; 
+	case "-": 
+		result = subtract(num1, num2); 
+		break; 
+	case "*": 
+		result = multiply(num1, num2); 
+		break; 
+	case "/": 
+		result = divide(num1, num2); 
+		break; 
+	default: 
+		result = "Invalid operation"; 
+} 
+}
+// Printing the final result 
+console.log("The Result of this operation is : " + result);
+
+    
+
+   </script>
+</body>
+</html>
